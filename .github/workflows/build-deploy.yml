@@ -9,6 +9,7 @@ on:
 
 env:
   RANDOM_TEST: lol
+  AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
 
 jobs:
   build:
