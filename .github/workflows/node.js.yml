@@ -22,10 +22,10 @@ jobs:
           cache: "npm"
       - run: npm ci
       - run: npm run build
-      - name: Configure AWS Credentials for China region audience
+      - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          audience: sts.amazonaws.com.cn
+          audience: sts.amazonaws.com
           aws-region: us-east-1
           role-to-assume: ${{ secrets.AWS_GH_ACTIONS_ROLE_ARN }}
           role-session-name: GhActionsCdkDeploy
