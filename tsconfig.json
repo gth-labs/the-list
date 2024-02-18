@@ -1,0 +1,14 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "packages/env"
+    },
+    {
+      "path": "packages/app"
+    },
+    {
+      "path": "packages/aws"
+    }
+  ]
+}

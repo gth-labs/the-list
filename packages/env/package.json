@@ -1,0 +1,14 @@
+{
+  "name": "@the-list/env",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/env.js",
+  "types": "dist/env.d.ts",
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo",
+    "prebuild": "npm run clean"
+  },
+  "author": "githop",
+  "license": "ISC"
+}

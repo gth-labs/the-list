@@ -1,0 +1,23 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "paths": {
+      "@the-list/*": [
+        "./packages/*"
+      ]
+    }
+  },
+  "exclude": [
+    "cdk.out"
+  ],
+  "references": [
+    {
+      "path": "../env"
+    },
+    {
+      "path": "../app"
+    }
+  ]
+}

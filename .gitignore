@@ -1,0 +1,10 @@
+dist
+.env
+.DS_Store
+tsconfig.tsbuildinfo
+
+*.d.ts
+node_modules
+# CDK asset staging directory
+.cdk.staging
+cdk.out

@@ -1,0 +1,24 @@
+{
+  "name": "@the-list/aws",
+  "version": "0.1.0",
+  "bin": {
+    "the-list": "bin/the-list.js"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo",
+    "prebuild": "npm run clean",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "aws-cdk": "2.128.0"
+  },
+  "dependencies": {
+    "@the-list/env": "^1.0.0",
+    "aws-cdk-lib": "2.128.0",
+    "constructs": "^10.0.0",
+    "source-map-support": "^0.5.21"
+  }
+}
