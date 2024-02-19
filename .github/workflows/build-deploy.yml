@@ -3,9 +3,7 @@
 
 name: Build and Deploy
 
-on:
-  push:
-    branches: ["main"]
+on: workflow_dispatch
 
 env:
   RANDOM_TEST: lol
