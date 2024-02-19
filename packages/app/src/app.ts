@@ -1,6 +1,13 @@
 import { getLambdaEnv } from "@the-list/env";
+import type { LambdaEvent, LambdaContext } from "hono/aws-lambda";
 import { Hono } from "hono";
-const app = new Hono();
+
+type Bindings = {
+  event: LambdaEvent;
+  context: LambdaContext;
+};
+
+const app = new Hono<{ Bindings: Bindings }>();
 
 const { RANDOM_TEST } = getLambdaEnv(process.env);
 
