@@ -1,0 +1,31 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"formatter": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true
+		}
+	},
+	"files": {
+		"include": [
+			"**/*.ts",
+			"**/*.tsx",
+			"**/*.js"
+		],
+		"ignore": [
+			"dist",
+			"packages/aws/cdk.out"
+		]
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single"
+		}
+	}
+}
