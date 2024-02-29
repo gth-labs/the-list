@@ -10,7 +10,9 @@ export function getCdkEnv(e: NodeJS.ProcessEnv) {
 }
 
 export function getLambdaEnv(e: NodeJS.ProcessEnv) {
-	return parseEnv(e, {
-		RANDOM_TEST: z.string(),
+	const Environment = parseEnv(e, {
+		DB_URL: z.string().url(),
+		DB_AUTH_TOKEN: z.string(),
 	});
+	return Environment;
 }
